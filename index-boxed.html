@@ -152,8 +152,92 @@
 .mega-col ul li a:hover {
     color: #1a73e8;
 }
+/*css mega menue*/
+.menu-item {
+    position: relative;
+}
+
+.menu-item a {
+    color: #fff;
+    text-decoration: none;
+    /*padding: 5px 20px;*/
+    display: block;
+}
+
+/*.menu-item a:hover {
+    background-color: #444;
+}*/
+
+.mega-menu {
+    display: none;
+    position: absolute;
+    left: -600px;
+    top: 100%;
+    background-color: #fff;
+    padding: 25px 45px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: max-content;
+    z-index: 10;
+    gap: 32px;
+}
+
+.mega-menu-column {
+    display: inline-block;
+    vertical-align: top;
+    width: 18rem;
+  
+}
+
+.mega-menu-column h6 {
+    margin-bottom: 10px;
+    margin-top: 10px;
+    color: #333;
+}
+
+.mega-menu-column a {
+    display: block;
+    margin-bottom: 2px;
+    color: #333;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.mega-menu-column a:hover {
+    color: #007bff;
+}
+
+.menu-item:hover .mega-menu {
+    display: flex;
+
+}
+
+/*.menu-item:hover > a {
+    background-color: #444;
+}*/
+@media (max-width:600px) {
+    .menu-item:hover .mega-menu {
+    display: flex;
+    flex-direction: column;
+
+}
+    .mega-menu {
+    position: unset;
+    width: max-content;
+    
+}
+    .menu-item a {
+   width: fit-content;
+    padding: 5px 0px;
+   
+    }
+.mega-menu-column {
+   
+    width: 15rem;
+}
 
 
+
+}
 
 
 </style>
@@ -176,129 +260,228 @@
 
 
                                     <li>
-                                        <a href="#">About</a>
+                                        <a href="#">About
+
+                                          
+                                        </a>
                                     </li>
                                    
-                                    <li class="dropdown">
+                                    <li class="menu-item">
                                         <a href="#">Prep Modules</a>
-                                        <ul class="mega-menu">
-                                            <li>
-                                                <h4>Classroom Program</h4>
-                                                <ul>
-                                                    <li><a href="#">Two Year Program</a></li>
-                                                    <li><a href="#">One Year Program</a></li>
-                                                    <li><a href="#">Extended Full Year Program</a></li>
-                                                    <li><a href="#">Retaker Program</a></li>
-                                                    <li><a href="#">Extended Crash Course</a></li>
-                                                    <li><a href="#">Crash Course</a></li>
-                                                    <li><a href="#">SAT® Preparation</a></li>
-                                                </ul>
-                                            </li>
+                                            <div class="mega-menu" style="left: -350px">
+                                                    <div class="mega-menu-column">
+                                                        <h6 style="font-weight: 900;">CLASSROOM PROGRAM</h6>
+                                                        <a href="#">TWO YEAR PROGRAM</a>
+                                                        <a href="#">ONE YEAR PROGRAM</a>
+                                                        <a href="#">EXTENDED FULL YEAR PROGRAM</a>
+                                                        <a href="#">RETAKER PROGRAM </a>
+                                                        <a href="#">EXTENDED CRASH COURSE</a>
+                                                        <a href="#">CRASH COURSE</a>
+                                                        <a href="#">SAT®PREPARATION</a>
+                                                      
+                                                    
+                                                      
+                                                    </div>
+                                                    <div class="mega-menu-column">
+                                                      <h6 style="font-weight: 900;">CORRESPONDANCE COURSE</h6>
+                                                        <a href="#" >ONLLINE STUDY MATERIAL CUET</a>
+                                                        <a href="#" >ONLLINE STUDY MATERIAL IIM</a>
+                                                        <a href="#" >ONLLINE STUDY MATERIAL LAW</a>
+                                                        <a href="#" >ONLLINE PROGRAM</a>
+                                                        <a href="#" >CUET TEST SETIES</a>
+                                                        <a href="#" >IIM TEST SERIES</a>
+                                                        <a href="#" >LAW TEST SERIES</a>
+                                                        
+                                                        
+                                                    </div>
+                                                    <div class="mega-menu-column">
+                                                        <h6 style="font-weight: 900;" >OTHER MODULES</h6>
+                                                        <a href="#">APPLICATION GUIDANCE</a>
+                                                        <a href="#">SAT</a>
+                                                        <a href="#">GMAT</a>
+                                                        <a href="#">GOLD®18</a>
+                                                        <a href="#">COUNCELING DIVISION</a>
+                                                        <a href="#">CAT</a>
+                                                        
+                                                    </div>
 
-                                            <li>
-                                                <h4>Correspondence Course</h4>
-                                                <ul>
-                                                    <li><a href="#">Online Study Material CUET</a></li>
-                                                    <li><a href="#">Online Study Material IIM</a></li>
-                                                    <li><a href="#">Online Study Material LAW</a></li>
-                                                    <li><a href="#">Online Program</a></li>
-                                                    <li><a href="#">CUET Test Series</a></li>
-                                                    <li><a href="#">IIM Test Series</a></li>
-                                                    <li><a href="#">LAW Test Series</a></li>
-                                                </ul>
-                                            </li>
+                                                    
 
-                                            <li>
-                                                <h4>Other Modules</h4>
-                                                <ul>
-                                                    <li><a href="#">Application Guidance</a></li>
-                                                    <li><a href="#">SAT</a></li>
-                                                    <li><a href="#">GMAT</a></li>
-                                                    <li><a href="#">Gold @ 18</a></li>
-                                                    <li><a href="#">Counselling Division</a></li>
-                                                    <li><a href="#">CAT</a></li>
-                                                </ul>
-                                            </li>
-                                        </ul>
+                                            </div>
                                     </li>
 
     
-                                    
-                                    <li class="dropdown">
-                                        <a href="#">Courses</a>
-                                        <ul class="mega-menu">
-                                            <li>
-                                                <h4>Classroom Program</h4>
-                                                <ul>
-                                                    <li><a href="#">Two Year Program</a></li>
-                                                    <li><a href="#">One Year Program</a></li>
-                                                    <li><a href="#">Extended Full Year Program</a></li>
-                                                    <li><a href="#">Retaker Program</a></li>
-                                                    <li><a href="#">Extended Crash Course</a></li>
-                                                    <li><a href="#">Crash Course</a></li>
-                                                    <li><a href="#">SAT® Preparation</a></li>
-                                                </ul>
-                                            </li>
+                                    <!--added drop down-->
+                                   
+                                        <li class="menu-item">
+                                                <a href="#">Courses </a>
+                                               
+                                            <div class="mega-menu">
+                                                    <div class="mega-menu-column">
+                                                        <h6 style="font-weight: 900;">CUET UG</h6>
+                                                        <a href="#">CUET</a>
+                                                         <h6 style="font-weight: 900;" >IIMS AFTER CLASS 12TH</h6>
+                                                    <h6 style="font-weight: 900;" >IIMS with 5-Year Integrated Program</h6>
+                                                        <a href="#" style="font-size: 16pxs;">IPMAT - IIM INDORE</a>
+                                                        <a href="#" style="font-size: 16pxs;">IPMAT - IIM ROHTAK</a>
+                                                        <a href="#" style="font-size: 16pxs;">IPMAT - IIM RANCHI</a>
+                                                        <a href="#" style="font-size: 16pxs;">IPMAT - IIM BODHGAYA</a>
+                                                        <a href="#" style="font-size: 16pxs;">IPMAT - IIM JAMMU</a>
+                                                        <a href="#" style="font-size: 16pxs;">IIM SHILLONG</a>
+                                                        <a href="#" style="font-size: 16pxs;">IIM AMRITHSAR</a>
 
-                                            <li>
-                                                <h4>Correspondence Course</h4>
-                                                <ul>
-                                                    <li><a href="#">Online Study Material CUET</a></li>
-                                                    <li><a href="#">Online Study Material IIM</a></li>
-                                                    <li><a href="#">Online Study Material LAW</a></li>
-                                                    <li><a href="#">Online Program</a></li>
-                                                    <li><a href="#">CUET Test Series</a></li>
-                                                    <li><a href="#">IIM Test Series</a></li>
-                                                    <li><a href="#">LAW Test Series</a></li>
-                                                </ul>
-                                            </li>
+                                                    <h6 style="font-weight: 900;" >IIMS offering Bachelor Program</h6>
+                                                        <a href="#" style="font-size: 16pxs;"> IIMS BANGLORE</a>
+                                                        <a href="#" style="font-size: 16pxs;"> IIMS KOZHIKODE</a>
+                                                        <a href="#" style="font-size: 16pxs;">IIMS SAMBALPUR</a>
+                                                        <a href="#" style="font-size: 16pxs;">IIMS SAMBAALPUR</a>
+                                                    
+                                                    <h6 style="font-weight: 900;" >MASS COMMUNICATION</h6>
+                                                        <a href="#" style="font-size: 16pxs;"> UNIVERSITY OF DELHI</a>
+                                                        <a href="#" style="font-size: 16pxs;"> SYMBIOSIS CENTRE FOR MEDIA & COMMUNICATION</a>
+                                                        <a href="#" style="font-size: 16pxs;">CHRIST UNIVERSITY</a>
+                                                        <a href="#" style="font-size: 16pxs;">ST XAVIER'S COLLEGE, MUMBAI</a>
+                                                        <a href="#" style="font-size: 16pxs;">IP UNIVERSITY</a>
+                                                        <a href="#" style="font-size: 16pxs;">SVKM'S MITHIBAI COLLEGE OF ARTS</a>
+                                                   
+                                                    </div>
+                                                    <div class="mega-menu-column">
+                                                      <h6 style="font-weight: 900;">MANAGEMENT</h6>
+                                                        <a href="#" >NPAT - NMIMS</a>
+                                                        <a href="#">SET - SYMIOSIS</a>
+                                                        <a href="#">IPU CET - IP UNIVERSITY</a>
+                                                        <a href="#">CHRIST ENTRANCDE TEST</a>
+                                                        <a href="#">JAMIA ENTRANCE TEST</a>
+                                                        <a href="#">XET - ST.XAVIER'S,MUMBAI</a>
+                                                        <a href="#">MET - UPES</a>
+                                                        
 
-                                            <li>
-                                                <h4>Other Modules</h4>
-                                                <ul>
-                                                    <li><a href="#">Application Guidance</a></li>
-                                                    <li><a href="#">SAT</a></li>
-                                                    <li><a href="#">GMAT</a></li>
-                                                    <li><a href="#">Gold @ 18</a></li>
-                                                    <li><a href="#">Counselling Division</a></li>
-                                                    <li><a href="#">CAT</a></li>
-                                                </ul>
-                                            </li>
-                                        </ul>
-                                    </li>
+                                                      <h6 style="font-weight: 900;">LAW</h6>
+                                                        <a href="#" >CLAT</a>
+                                                        <a href="#">AILET- NLU,DELHI</a>
+                                                        <a href="#">SLAT-SYMBIOSIS</a>
+                                                        <a href="#">MH-CET LAW(GLC BOMBAY, ILS PUNE)</a>
+                                                        <a href="#">CULEE - CHRIST</a>
+                                                        <a href="#">NMIMS LAT</a>
+                                                        <a href="#">IP UNIVERSITY LAW</a>
+                                                        <a href="#">JMI ENTRANCE TEST</a>
+                                                        <a href="#">UL-SAT - UPES, DEHRADUN</a>
 
+                                                    <h6 style="font-weight: 900;">HOTEL MANAGEMENT</h6>
+                                                        <a href="#" >NCHMCT</a>
+                                                        <a href="#">WGSHA, MANIPAL</a>
+                                                        <a href="#">CHRIST UNIVESITY (BHM)</a>
+                                                        <a href="#">IPU CET BHMCT</a>
+                                                        <a href="#">IHM, AURANGABAD</a>
+                                                        <a href="#">OBEROI STEP PROGRAM</a>
+                                                        
+                                                    </div>
+                                                    <div class="mega-menu-column">
+                                                        <h6 style="font-weight: 900;" >B.COM</h6>
+                                                        <a href="#">UNIVERSITY OF DELHI</a>
+                                                        <a href="#">BANARAS HINDU UNIVERSITY</a>
+                                                        <a href="#">IP UNIVERSITY</a>
+                                                        <a href="#">JAMIA MILLI ISLAMIA</a>
+                                                        <a href="#">NMIMS</a>
+                                                        <a href="#">CHRIST UNIVERSITY</a>
+                                                        <a href="#">SYMBIOSIS COLLEGE AC, PUNE</a>
+                                                        <a href="#">ST. XAVIOR'S KOLKATA</a>
+                                                        <a href="#">LOYOLA COLLEGE,TAMIL NADU</a>
 
-                                    <li class="dropdown">
+                                                     <h6 style="font-weight: 900;" >BACHOLER OF COMPUTER APPPLICATIONS</h6>
+                                                        <a href="#">SYMBIOSIS INSTITUTE OF COMPUTER STUDIES & RESEARCH(SICSR),PUNE</a>
+                                                        <a href="#">CHRIST UNIVERSITY(BANGALURU)</a>
+                                                        <a href="#">VELLORA INSTITUTE OF TECHNOLOGY</a>
+                                                        <a href="#">PRESIDENCY COLLEGE,BANGALORE</a>
+                                                       <a href="#">UPES, DEHRADUN</a>
+                                                       <a href="#">BHARTIYA VIDYAPEETH, PUNE</a>
+                                                       <a href="#">DELHI SKILL AND ENTERPRENURESHIP UNIVERSITY</a>
+                                                        
+
+                                                    </div>
+
+                                                    <div class="mega-menu-column">
+                                                      <h6 style="font-weight: 900;" >PSYCHOLOGY</h6>
+                                                        <a href="#">UNIVERSITY OF DELHI</a>
+                                                        <a href="#">CHRIST UNIVERSITY, BANGALORE</a>
+                                                        <a href="#">JAMIA MILLIA ISLAMIA UNIVERSITY</a>
+                                                        <a href="#">BANARAS HINDU UNIVERSITY</a>
+                                                        <a href="#">MOUNT CARMEL COLLEGE</a>
+                                                        <a href="#">FLAME UNIVERSITY</a>
+                                                        <a href="#">ALIGARH MUSLIM UNIVERSITY</a>
+                                                        <a href="#">ASHOKA UNIVERSITY, SONEPAT</a>
+                                                        <a href="#">MIT-WORLD PEACE UNIVERSITY, PUNE</a>
+
+                                                    <div class="mega-menu-column">
+                                                      <h6 style="font-weight: 900;" >LIBERAL ARTS/NEW AGE</h6>
+                                                        <a href="#">ASHOKA UNIVERSITY</a>
+                                                        <a href="#">FLAME UNIVERSITY</a>
+                                                        <a href="#">KREA UNIVERSITY</a>
+                                                        <a href="#">PLAKSHA UNIVERSITY</a>
+                                                        <a href="#">AZIMA UNIVERSITY</a>
+                                                        <a href="#">AHMEDABAD UNIVERSITY</a>
+                                                        <a href="#">KARNAVATI UNIVERSTY</a>
+                                                        <a href="#">PANDIT DEENDAYAL ENERGY UNIVERSITY (PDEU) UNIVERSITY</a>
+                                                        <a href="#">UNIVERSITY OF SOUTHAMPTON DELHI</a>
+
+                                                        
+                                                    </div>
+
+                                            </div>
+                                        </li>
+                                    <!--added-->
+
+                                   <!--  <li class="dropdown">
                                         <a href="#">Result</a>
-                                        <ul>
+                                      <ul>
                                             <li class="dropdown">
-                                                <a href="#">Blog grid</a>
-                                                <ul>
-                                                    <li><a href="#">No sidebar</a></li>
-                                                    <li><a href="#">Left sidebar</a></li>
-                                                    <li><a href="#">Right sidebar</a></li>
-                                                </ul>
+                                                <a href="#">RESULT 2025</a>
+                                                <a href="#">RESULT 2024</a>
+                                                <a href="#">RESULT 2023</a>
+                                                <a href="#">RESULT 2022</a>
+                                                <a href="#">RESULT 2021</a>
+                                                <a href="#">RESULT 2020</a>
+                                                <a href="#">RESULT 2019</a>
+                                                <a href="#">RESULT 2017</a>
+                                                <a href="#">RESULT 2016</a>
+                                                <a href="#">RESULT 2015</a>
+                                             
+                                               
                                             </li>
-                                            <li class="dropdown">
-                                                <a href="#">Blog list</a>
-                                                <ul>
-                                                    <li><a href="#">No sidebar</a></li>
-                                                    <li><a href="#">Left sidebar</a></li>
-                                                    <li><a href="#">Right sidebar</a></li>
-                                                </ul>
-                                            </li>
-                                            <li><a href="#">Blog carousel 01</a></li>
-                                            <li><a href="#">Blog carousel 02</a></li>
-                                            <li class="dropdown">
-                                                <a href="#">Blog details</a>
-                                                <ul>
-                                                    <li><a href="#">No sidebar</a></li>
-                                                    <li><a href="#">Left sidebar</a></li>
-                                                    <li><a href="#">Right sidebar</a></li>
-                                                </ul>
-                                            </li>
-                                        </ul>
+                                            
+                                        </ul>--> 
+
+
+
+
+                                        <!--ADDED-->
+                                <li class="menu-item">
+                                        <a href="#">Result</a>
+                                            <div class="mega-menu" style="left: -10px ; padding: 20px 10px;">
+                                                    <div class="mega-menu-column" style="width: 10rem; padding: 0 0 6px 6px ">
+                                                       
+                                                        <a href="#">RESULT 2025</a>
+                                                        <a href="#">RESULT 2024</a>
+                                                        <a href="#">RESULT 2023</a>
+                                                        <a href="#">RESULT 2022</a>
+                                                        <a href="#">RESULT 2021</a>
+                                                        <a href="#">RESULT 2020</a>
+                                                        <a href="#">RESULT 2019</a>
+                                                        <a href="#">RESULT 2018</a>
+                                                        <a href="#">RESULT 2017</a>
+                                                        <a href="#">RESULT 2016</a>
+                                                        <a href="#">RESULT 2015</a>
+                                                        
+                                                    
+                                                      
+                                                    </div>
+                                                   
+                                                    
+
+                                            </div>
                                     </li>
+
+    
                                     <li>
                                         <a href="#">Contact</a>
                                     </li>
