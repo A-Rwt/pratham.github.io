@@ -86,167 +86,167 @@
                         </div><!-- /.topbar__social social-links -->
                     </div><!-- /.topbar__inner -->
                 </div><!-- /.container-fluid -->
-            </div><!-- /.topbar -->
-<style>
-/* ================================
-   MEGA MENU — CLEAN MERGED VERSION
-   ================================ */
+        </div><!-- /.topbar -->
+        <style>
+        /* ================================
+        MEGA MENU — CLEAN MERGED VERSION
+        ================================ */
 
-/* Main mega menu container */
-.mega-menu-grid {
-    display: none;
-    position: absolute;
-    left: 0;
-    top: 100%;
-    width: 100%;
-    padding: 40px 50px;
-    background: #fff;
-    border-top: 3px solid #eee;
-    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
-    z-index: 1000;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 40px;
-}
+        /* Main mega menu container */
+        .mega-menu-grid {
+            display: none;
+            position: absolute;
+            left: 0;
+            top: 100%;
+            width: 100%;
+            padding: 40px 50px;
+            background: #fff;
+            border-top: 3px solid #eee;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+            z-index: 1000;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 40px;
+        }
 
-/* Show on hover */
-.dropdown:hover .mega-menu-grid {
-    display: grid;
-}
+        /* Show on hover */
+        .dropdown:hover .mega-menu-grid {
+            display: grid;
+        }
 
-/* Column structure */
-.mega-col h4 {
-    font-size: 14px;
-    font-weight: 700;
-    text-transform: uppercase;
-    margin-bottom: 10px;
-    color: #1f2f6f;
-}
+        /* Column structure */
+        .mega-col h4 {
+            font-size: 14px;
+            font-weight: 700;
+            text-transform: uppercase;
+            margin-bottom: 10px;
+            color: #1f2f6f;
+        }
 
-.mega-col h5 {
-    font-size: 13px;
-    font-weight: 600;
-    margin-top: 15px;
-    margin-bottom: 5px;
-    color: #222;
-}
+        .mega-col h5 {
+            font-size: 13px;
+            font-weight: 600;
+            margin-top: 15px;
+            margin-bottom: 5px;
+            color: #222;
+        }
 
-.mega-col ul {
-    list-style: none;
-    padding: 0;
-    margin: 0 0 15px 0;
-}
+        .mega-col ul {
+            list-style: none;
+            padding: 0;
+            margin: 0 0 15px 0;
+        }
 
-.mega-col ul li {
-    margin: 5px 0;
-}
+        .mega-col ul li {
+            margin: 5px 0;
+        }
 
-.mega-col ul li a {
-    display: block;
-    padding: 4px 0;
-    font-size: 13px;
-    color: #222;
-    text-decoration: none;
-    transition: 0.2s;
-}
+        .mega-col ul li a {
+            display: block;
+            padding: 4px 0;
+            font-size: 13px;
+            color: #222;
+            text-decoration: none;
+            transition: 0.2s;
+        }
 
-.mega-col ul li a:hover {
-    color: #1a73e8;
-}
-/*css mega menue*/
-.menu-item {
-    position: relative;
-}
+        .mega-col ul li a:hover {
+            color: #1a73e8;
+        }
+        /*css mega menue*/
+        .menu-item {
+            position: relative;
+        }
 
-.menu-item a {
-    color: #fff;
-    text-decoration: none;
-    /*padding: 5px 20px;*/
-    display: block;
-}
+        .menu-item a {
+            color: #fff;
+            text-decoration: none;
+            /*padding: 5px 20px;*/
+            display: block;
+        }
 
-/*.menu-item a:hover {
-    background-color: #444;
-}*/
+        /*.menu-item a:hover {
+            background-color: #444;
+        }*/
 
-.mega-menu {
-    display: none;
-    position: absolute;
-    left: -600px;
-    top: 100%;
-    background-color: #fff;
-    padding: 25px 45px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: max-content;
-    z-index: 10;
-    gap: 32px;
-}
+        .mega-menu {
+            display: none;
+            position: absolute;
+            left: -600px;
+            top: 100%;
+            background-color: #fff;
+            padding: 25px 45px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: max-content;
+            z-index: 10;
+            gap: 32px;
+        }
 
-.mega-menu-column {
-    display: inline-block;
-    vertical-align: top;
-    width: 18rem;
-  
-}
+        .mega-menu-column {
+            display: inline-block;
+            vertical-align: top;
+            width: 18rem;
 
-.mega-menu-column h6 {
-    margin-bottom: 10px;
-    margin-top: 10px;
-    color: #333;
-}
+        }
 
-.mega-menu-column a {
-    display: block;
-    margin-bottom: 2px;
-    color: #333;
-    text-decoration: none;
-    font-size: 14px;
-}
+        .mega-menu-column h6 {
+            margin-bottom: 10px;
+            margin-top: 10px;
+            color: #333;
+        }
 
-.mega-menu-column a:hover {
-    color: #007bff;
-}
+        .mega-menu-column a {
+            display: block;
+            margin-bottom: 2px;
+            color: #333;
+            text-decoration: none;
+            font-size: 14px;
+        }
 
-.menu-item:hover .mega-menu {
-    display: flex;
+        .mega-menu-column a:hover {
+            color: #007bff;
+        }
 
-}
+        .menu-item:hover .mega-menu {
+            display: flex;
 
-/*.menu-item:hover > a {
-    background-color: #444;
-}*/
-@media (max-width:600px) {
-    .menu-item:hover .mega-menu {
-    display: flex;
-    flex-direction: column;
+        }
 
-}
-    .mega-menu {
-    position: unset;
-    width: max-content;
-    
-}
-    .menu-item a {
-   width: fit-content;
-    padding: 5px 0px;
-   
-    }
-.mega-menu-column {
-   
-    width: 15rem;
-}
+        /*.menu-item:hover > a {
+            background-color: #444;
+        }*/
+        @media (max-width:600px) {
+            .menu-item:hover .mega-menu {
+            display: flex;
+            flex-direction: column;
 
+        }
+            .mega-menu {
+            position: unset;
+            width: max-content;
+            
+        }
+            .menu-item a {
+        width: fit-content;
+            padding: 5px 0px;
 
+            }
+        .mega-menu-column {
 
-}
+            width: 15rem;
+        }
 
 
-</style>
+
+        }
+
+
+        </style>
             <header class="main-header sticky-header sticky-header--normal">
                 <div class="container-fluid">
                     <div class="main-header__inner">
                         <div class="main-header__logo logo-retina">
                             <a href="#">
-                                <img src="assets\images\pratham.png" alt="eduhive HTML" width="209">
+                                <img src="assets\images\pratham-removebg-preview.png" alt="Pratham HTML" width="150">
                             </a>
                         </div><!-- /.main-header__logo -->
                         <div class="main-header__right">
@@ -2436,7 +2436,7 @@ New Delhi 110048</a>
             <span class="mobile-nav__close mobile-nav__toggler"><i class="icon-close"></i></span>
             <div class="logo-box logo-retina">
                 <a href="#" aria-label="logo image">
-                    <img src="assets/images/logo-light.png" width="209" alt="" />
+                    <img src="assets\images\pratham-removebg-preview.png" width="209" alt="" />
                 </a>
             </div><!-- /.logo-box -->
             <div class="mobile-nav__container"></div><!-- /.mobile-nav__container -->
